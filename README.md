@@ -8,7 +8,7 @@
 
 ## PCB
 
-Online preview avaliable [here](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%badjeff%2Fpmw3610-pcb), powered by [KiCanvas](https://github.com/theacodes/kicanvas).
+Online preview avaliable [here](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fbadjeff%2Fpmw3610-pcb), powered by [KiCanvas](https://github.com/theacodes/kicanvas).
 
 <img src="board.png" width="450">
 
