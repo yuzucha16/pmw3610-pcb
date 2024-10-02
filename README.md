@@ -4,13 +4,19 @@
 
 - Base on schematic from [siderakb/pmw3610-pcb](https://github.com/siderakb/pmw3610-pcb).
 - Be operated with 3.3V voltage level ONLY.
-- Outlined as narrow as possible for side mount on low profile keyboards.
+- Outlined as narrow as possible for side mount horizontally and perpendicular on low profile keyboards.
+
+<img src="photo-1.jpg" width="400">
+
+*Figure 1: Size comparing to Seeed XIAO BLE*
 
 ## PCB
 
 Online preview avaliable [here](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fbadjeff%2Fpmw3610-pcb), powered by [KiCanvas](https://github.com/theacodes/kicanvas).
 
-<img src="board.png" width="450">
+<img src="board.png" width="400">
+
+*Figure 2: PCB edgecuts dimension*
 
 ### BOM
 
