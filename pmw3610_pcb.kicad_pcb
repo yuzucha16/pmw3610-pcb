@@ -54,7 +54,7 @@
 			(layerselection 0x00010fc_ffffffff)
 			(plot_on_all_layers_selection 0x0000000_00000000)
 			(disableapertmacros no)
-			(usegerberextensions no)
+			(usegerberextensions yes)
 			(usegerberattributes yes)
 			(usegerberadvancedattributes yes)
 			(creategerberjobfile yes)
@@ -83,9 +83,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "./jlcpcb")
 		)
 	)
 	(net 0 "")
@@ -1602,7 +1602,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C7"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(uuid "3a8f8ef1-5183-4885-bd75-9ca2803d58ef")
 			(effects
@@ -1613,7 +1613,7 @@
 			)
 		)
 		(property "Value" "10nF X7R"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "0f209e50-ae58-489a-acaa-15583a308ce1")
 			(effects
@@ -1768,7 +1768,7 @@
 			(uuid "4ef5ba19-86cd-4c23-942f-f9120fb570bb")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "2cf767c4-aa37-4093-a6de-e25b841c23e3")
 			(effects
@@ -2305,7 +2305,7 @@
 		(path "/0207d2ed-0245-4324-99de-07f067a527e7")
 		(sheetname "ルート")
 		(sheetfile "pmw3610_pcb.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -1.33 -1.33)
 			(end 0 -1.33)
@@ -2552,7 +2552,7 @@
 		(descr "5-pin SOT23 package")
 		(tags "SOT-23-5 hand-soldering")
 		(property "Reference" "U2"
-			(at 0 -2.9 360)
+			(at 0 -2.9 0)
 			(layer "F.SilkS")
 			(uuid "8dcc637d-8a01-4655-bd2c-5585d510db29")
 			(effects
@@ -2563,7 +2563,7 @@
 			)
 		)
 		(property "Value" "TLV74318PDBVR"
-			(at 0 2.9 360)
+			(at 0 2.9 0)
 			(layer "F.Fab")
 			(uuid "a094d193-f46a-4a96-83bb-862f1a09656b")
 			(effects
@@ -3040,9 +3040,9 @@
 		(at 153 100 90)
 		(descr "PMW3610DM-SUDU special 16pin molded lead-frame DIP")
 		(property "Reference" "U4"
-			(at -10 0.5 0)
+			(at -10 0 0)
 			(layer "B.SilkS")
-			(uuid "b05c6e8b-8914-4402-bf83-1970e2a50412")
+			(uuid "0434eeef-de6a-4d02-8607-edfb5429243a")
 			(effects
 				(font
 					(size 1 1)
@@ -3052,9 +3052,9 @@
 			)
 		)
 		(property "Value" "PMW3610"
-			(at 0 0 90)
+			(at 0 0 -90)
 			(layer "B.Fab")
-			(uuid "23efba38-7bdd-47c0-a8de-25ed2d870d34")
+			(uuid "86f17699-8c2f-4279-983f-7aac1ea67c97")
 			(effects
 				(font
 					(size 1 1)
@@ -3064,10 +3064,10 @@
 			)
 		)
 		(property "Footprint" "pmw3610_pcb:PMW3610DM-SUDU 16Pin"
-			(at 0 0 90)
+			(at 0 0 -90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "d36e61b9-e3df-463a-a7f7-f781bdf27588")
+			(uuid "0a60ba1f-e771-4046-888d-ff5700ae1340")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3077,10 +3077,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 -90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "92efeb48-052b-40f9-8bf8-2ea4add6dc71")
+			(uuid "f8f4f32a-76d1-4b18-8179-5a8fea2a1427")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3090,10 +3090,10 @@
 			)
 		)
 		(property "Description" "Optical mouse sensor"
-			(at 0 0 90)
+			(at 0 0 -90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "d4ca7cf6-316d-4c43-b91e-0e82ff030303")
+			(uuid "f10462f8-3f1a-4037-a1df-662240b3d8ae")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3114,7 +3114,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "98cd5708-004b-431e-aa49-c1784789ba8a")
+			(uuid "6adce2eb-8b4f-43e2-852d-a50d72342a56")
 		)
 		(fp_line
 			(start 9.668 -5.15)
@@ -3124,7 +3124,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "a218e239-2574-4421-b73d-5fb15399d78d")
+			(uuid "cb793266-e8c9-474f-86ee-815e36f170ac")
 		)
 		(fp_line
 			(start 6.168 -5.15)
@@ -3134,7 +3134,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "7ae58b9a-3bb1-4b5b-b51c-89950b664319")
+			(uuid "b002e638-6917-4b8d-adb0-18ec4718df1d")
 		)
 		(fp_line
 			(start 9.668 4.35)
@@ -3144,7 +3144,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "f9bdbe2d-eb7d-4633-aa20-1f7eed63dfe1")
+			(uuid "a427b3cd-ef38-4c8f-9552-138b615f34d6")
 		)
 		(fp_line
 			(start -7.1628 5.334)
@@ -3154,7 +3154,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "2aa401ab-d4ef-4888-a083-84e0507074c2")
+			(uuid "9c6fbf74-cb6a-4b6b-bbb0-659eb89b4dc8")
 		)
 		(fp_line
 			(start -9.0772 5.334)
@@ -3164,7 +3164,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "b3ee1fd1-b3b5-4649-9452-6eb7eb8ece74")
+			(uuid "a3f2948e-027e-4103-873b-2d5f2438eaf4")
 		)
 		(fp_line
 			(start 8.468 5.35)
@@ -3174,7 +3174,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "25167c93-386d-4a65-a699-d4da7786324c")
+			(uuid "0dd93b46-fc33-479d-9bd6-2d3aa53c132e")
 		)
 		(fp_circle
 			(center 6.168 3.75)
@@ -3185,7 +3185,7 @@
 			)
 			(fill solid)
 			(layer "Dwgs.User")
-			(uuid "98bd7f26-e6ff-4119-bafd-4071392c6ac1")
+			(uuid "58982791-f627-488c-8e70-b125111c4951")
 		)
 		(fp_line
 			(start 1.972 0)
@@ -3195,7 +3195,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "42b1f514-efd4-4784-8a2b-5c74f047583c")
+			(uuid "5c1f305b-287b-4cf9-967a-f083a251786b")
 		)
 		(fp_line
 			(start 2.988 1.016)
@@ -3205,7 +3205,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "7754271e-579a-4189-86de-500981ede4c1")
+			(uuid "b0fccbf4-3394-4a3d-adb7-227343ebbd65")
 		)
 		(fp_circle
 			(center 2.988 0)
@@ -3216,18 +3216,7 @@
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "0051ebb1-42cc-4309-9bad-c2612f38a0aa")
-		)
-		(fp_rect
-			(start -8.332 -4.35)
-			(end 8.968 4.35)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(fill none)
-			(layer "Edge.Cuts")
-			(uuid "6a9dbd0c-6b42-4a8b-b2cb-d3badc2c419e")
+			(uuid "660085b1-9296-4d97-b01d-bc9d5e91b58d")
 		)
 		(fp_rect
 			(start 10 6.5)
@@ -3238,13 +3227,13 @@
 			)
 			(fill none)
 			(layer "B.CrtYd")
-			(uuid "e1acf426-e49c-45f5-8708-2c82ebacbef0")
+			(uuid "c2364b65-0926-47a3-8607-512d248513d9")
 		)
 		(fp_text user "Optical Center"
 			(at 1.5 0 0)
 			(unlocked yes)
 			(layer "Cmts.User")
-			(uuid "8bb5c22e-7ce4-4e5a-90da-a6a3945aa5d0")
+			(uuid "f1182f87-d7ea-45ae-b9c9-bb4829a727d9")
 			(effects
 				(font
 					(size 0.7 0.7)
@@ -3262,7 +3251,7 @@
 			(net 10 "Net-(U4-+VCSEL)")
 			(pinfunction "+VCSEL")
 			(pintype "input")
-			(uuid "e5a374fd-99eb-4219-8690-101c3f92b888")
+			(uuid "dead3451-6ffe-42a0-bc6b-13e1898f4377")
 		)
 		(pad "2" thru_hole oval
 			(at 4.388 5.35 270)
@@ -3273,7 +3262,7 @@
 			(net 5 "SDIO")
 			(pinfunction "SDIO")
 			(pintype "bidirectional")
-			(uuid "f9ed883a-c93e-4dc3-b4ce-fa6a7e7c6d76")
+			(uuid "dc3bcd97-b039-468d-8f1a-31ab162905e1")
 		)
 		(pad "3" thru_hole oval
 			(at 2.608 5.35 270)
@@ -3284,7 +3273,7 @@
 			(net 6 "SCLK")
 			(pinfunction "SCLK")
 			(pintype "input")
-			(uuid "e805cf4f-4db7-4907-ba34-1bb4166d3927")
+			(uuid "ce96cfe2-fdab-4752-8a1d-2fd1af957bf6")
 		)
 		(pad "4" thru_hole oval
 			(at 0.828 5.35 270)
@@ -3295,7 +3284,7 @@
 			(net 14 "unconnected-(U4-NC-Pad4)")
 			(pinfunction "NC")
 			(pintype "no_connect")
-			(uuid "18180a12-1865-418e-8a5e-051eb81e85c0")
+			(uuid "04508ca8-647a-4ba1-87a9-9e2904dfab9c")
 		)
 		(pad "5" thru_hole oval
 			(at -0.952 5.35 270)
@@ -3306,7 +3295,7 @@
 			(net 7 "nCS")
 			(pinfunction "NCS")
 			(pintype "input")
-			(uuid "262e1d89-da7d-421a-aa3c-7d7c18692ab0")
+			(uuid "3cce15f9-8bb3-4a9c-b4cc-bf9df364e2a0")
 		)
 		(pad "6" thru_hole oval
 			(at -2.732 5.35 270)
@@ -3317,7 +3306,7 @@
 			(net 4 "VIN")
 			(pinfunction "VDDIO")
 			(pintype "power_in")
-			(uuid "43b75454-eb35-43b4-8a1a-c82b43a65bb0")
+			(uuid "9e69cbcc-28ca-4096-87c8-1a425f36b668")
 		)
 		(pad "7" thru_hole oval
 			(at -4.512 5.35 270)
@@ -3328,7 +3317,7 @@
 			(net 12 "Net-(U4-NRESET)")
 			(pinfunction "NRESET")
 			(pintype "input")
-			(uuid "68d570bb-b3bf-4ff2-8d34-a55272ffde3a")
+			(uuid "eb061e1d-da3c-4d6e-8cb5-c28d76f3c76e")
 		)
 		(pad "8" thru_hole oval
 			(at -6.292 5.35 270)
@@ -3339,7 +3328,7 @@
 			(net 8 "MOTION")
 			(pinfunction "MOTION")
 			(pintype "output")
-			(uuid "225e3574-3970-4f41-84e4-367951340975")
+			(uuid "35322b12-1053-4d82-b671-415f347fde19")
 		)
 		(pad "9" thru_hole oval
 			(at -7.182 -5.35 270)
@@ -3350,7 +3339,7 @@
 			(net 11 "Net-(U4-VCP)")
 			(pinfunction "VCP")
 			(pintype "power_in")
-			(uuid "18eba6e2-7d29-44d0-8629-40f668fc1751")
+			(uuid "e150a0f3-1754-4d6a-a563-556bee147300")
 		)
 		(pad "10" thru_hole oval
 			(at -5.402 -5.35 270)
@@ -3361,7 +3350,7 @@
 			(net 10 "Net-(U4-+VCSEL)")
 			(pinfunction "PASS_T")
 			(pintype "power_in")
-			(uuid "62c233f9-eea1-4f91-88f3-715f9101374e")
+			(uuid "4e79cdcf-a94f-48ea-a75b-0288a86e5505")
 		)
 		(pad "11" thru_hole oval
 			(at -3.622 -5.35 270)
@@ -3372,7 +3361,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "7a8b772a-65e5-4c87-89ec-85cb3dfdd921")
+			(uuid "742361e5-b82c-4893-90f1-b35689aa4b7e")
 		)
 		(pad "12" thru_hole oval
 			(at -1.842 -5.35 270)
@@ -3383,7 +3372,7 @@
 			(net 3 "Net-(U4-CP)")
 			(pinfunction "CP")
 			(pintype "power_in")
-			(uuid "866da5ef-cab9-4c11-95ee-5d132ed71c8a")
+			(uuid "6a09e8ec-4672-4932-957d-50d8bba6dfaf")
 		)
 		(pad "13" thru_hole oval
 			(at -0.062 -5.35 270)
@@ -3394,7 +3383,7 @@
 			(net 9 "Net-(U4-CN)")
 			(pinfunction "CN")
 			(pintype "power_in")
-			(uuid "a22e2ace-df50-4c19-97cb-557d45b90de9")
+			(uuid "d4f1e4a5-21d4-4fe7-bf65-d2104df70062")
 		)
 		(pad "14" thru_hole oval
 			(at 1.718 -5.35 270)
@@ -3405,7 +3394,7 @@
 			(net 2 "+1V8")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "887b4de9-1846-4a9b-aa51-46901f8caed1")
+			(uuid "1abeceb7-72e5-46fd-9fac-57b1ca691ac4")
 		)
 		(pad "15" thru_hole oval
 			(at 3.498 -5.35 270)
@@ -3416,7 +3405,7 @@
 			(net 15 "Net-(U4--VCSEL)")
 			(pinfunction "XYLASER")
 			(pintype "input")
-			(uuid "4b8c86ca-88ce-4797-a810-934c45571cd7")
+			(uuid "e3d64032-1b18-486c-a7a6-6e2bbe7abb12")
 		)
 		(pad "16" thru_hole oval
 			(at 5.278 -5.35 270)
@@ -3427,40 +3416,12 @@
 			(net 15 "Net-(U4--VCSEL)")
 			(pinfunction "-VCSEL")
 			(pintype "input")
-			(uuid "c8773a81-38d4-4cb5-a5dc-f52bf3ed2fc7")
-		)
-		(zone
-			(net 0)
-			(net_name "")
-			(layers "*.Cu" "B.CrtYd")
-			(uuid "5774d42b-6437-45c9-a11c-2525c6b7a0ee")
-			(hatch edge 0.508)
-			(connect_pads
-				(clearance 0)
-			)
-			(min_thickness 0.254)
-			(filled_areas_thickness no)
-			(keepout
-				(tracks not_allowed)
-				(vias not_allowed)
-				(pads not_allowed)
-				(copperpour not_allowed)
-				(footprints not_allowed)
-			)
-			(fill
-				(thermal_gap 0.508)
-				(thermal_bridge_width 0.508)
-			)
-			(polygon
-				(pts
-					(xy 157.3688 108.3312) (xy 157.318 91.0084) (xy 148.6312 91.0084) (xy 148.6312 108.3312)
-				)
-			)
+			(uuid "8af76ffa-f246-4f13-8a6b-d62e7defe4ce")
 		)
 		(group ""
-			(uuid "c6df869e-d3ca-4ad9-a61d-c4a4485c4236")
-			(members "0051ebb1-42cc-4309-9bad-c2612f38a0aa" "42b1f514-efd4-4784-8a2b-5c74f047583c"
-				"7754271e-579a-4189-86de-500981ede4c1"
+			(uuid "c9f625d9-e24c-48f9-bfa9-f05e2c736375")
+			(members "5c1f305b-287b-4cf9-967a-f083a251786b" "660085b1-9296-4d97-b01d-bc9d5e91b58d"
+				"b0fccbf4-3394-4a3d-adb7-227343ebbd65"
 			)
 		)
 	)
