@@ -175,7 +175,7 @@
 		(path "/f1faa9db-1d98-402c-a014-4fde104ce52f")
 		(sheetname "ルート")
 		(sheetfile "pmw3610_pcb.kicad_sch")
-		(attr smd dnp)
+		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -0.237258 0.5225)
 			(end 0.237258 0.5225)
@@ -1027,7 +1027,7 @@
 		(path "/dd039357-3c42-4cd5-b6b9-050698076d80")
 		(sheetname "ルート")
 		(sheetfile "pmw3610_pcb.kicad_sch")
-		(attr smd dnp)
+		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -0.14058 -0.51)
 			(end 0.14058 -0.51)
@@ -3105,7 +3105,7 @@
 		(path "/e3b2d777-35e6-4589-b6b5-cb5358e6bb12")
 		(sheetname "ルート")
 		(sheetfile "pmw3610_pcb.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom dnp)
 		(fp_line
 			(start -8.0772 -5.166)
 			(end -9.0772 -5.166)

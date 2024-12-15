@@ -514,13 +514,13 @@
       "fields_ordered": [
         {
           "group_by": false,
-          "label": "Reference",
+          "label": "Designator",
           "name": "Reference",
           "show": true
         },
         {
           "group_by": true,
-          "label": "Value",
+          "label": "Comment",
           "name": "Value",
           "show": true
         },

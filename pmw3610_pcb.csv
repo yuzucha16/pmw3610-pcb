@@ -6,6 +6,4 @@
 "C6","10uF X7R","~","Capacitor_SMD:C_0603_1608Metric","1",""
 "C7","10nF X7R","~","Capacitor_SMD:C_0603_1608Metric","1",""
 "C8,C9","1uF","~","Capacitor_SMD:C_0603_1608Metric","2",""
-"C10","22nF","~","Capacitor_SMD:C_0603_1608Metric","1","DNP"
-"R1","10k","~","Resistor_SMD:R_0603_1608Metric","1","DNP"
 "U2","TLV74318PDBVR","","Package_TO_SOT_SMD:SOT-23-5_HandSoldering","1",""
